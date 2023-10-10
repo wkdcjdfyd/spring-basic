@@ -2,6 +2,7 @@ package com.ryong.core;
 
 import com.ryong.core.discount.DiscountPolicy;
 import com.ryong.core.discount.FixDiscountPolicy;
+import com.ryong.core.discount.RateDiscountPolicy;
 import com.ryong.core.member.MemberRepository;
 import com.ryong.core.member.MemberService;
 import com.ryong.core.member.MemberServiceImpl;
@@ -24,6 +25,7 @@ public class AppConfig {
     }
 
     public DiscountPolicy discountPolicy(){
-        return new FixDiscountPolicy();
+        //return new FixDiscountPolicy();
+        return new RateDiscountPolicy();
     }
 }
