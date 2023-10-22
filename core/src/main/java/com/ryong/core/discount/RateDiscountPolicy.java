@@ -2,7 +2,9 @@ package com.ryong.core.discount;
 
 import com.ryong.core.member.Grade;
 import com.ryong.core.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;
